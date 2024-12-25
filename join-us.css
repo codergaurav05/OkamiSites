@@ -1,0 +1,141 @@
+/* Styles specific to the Join Us page */
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #4B0082; /* Dark purple */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header .title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff; /* White text */
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff; /* White neon glow */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    background: #fff; /* White background */
+    color: #000; /* Black text */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    background: #4B0082; /* Dark purple */
+    color: #fff; /* White text */
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #1e1e1e; /* Dark background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.form-container h2 {
+    font-size: 28px;
+    color: #fff; /* White text */
+    text-shadow: 0 0 10px #fff; /* White neon glow */
+    margin-bottom: 20px;
+}
+
+.form-container p {
+    font-size: 18px;
+    color: #ccc; /* Light grey text */
+    line-height: 1.5;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #4B0082; /* Dark purple border */
+    border-radius: 5px;
+    background: #333; /* Dark input background */
+    color: #fff; /* White text */
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #fff; /* White focus border */
+}
+
+button {
+    display: inline-block;
+    background: #4B0082; /* Dark purple */
+    color: #fff; /* White text */
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #6a0dad; /* Lighten dark purple */
+}
+
+footer {
+    text-align: center;
+    background: #4B0082; /* Dark purple */
+    padding: 20px;
+    color: #fff; /* White text */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+}
